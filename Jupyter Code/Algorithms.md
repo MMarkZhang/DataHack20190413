@@ -1,4 +1,3 @@
 ### Algorithms:
-Xgboost 
-\ 
+Xgboost \n 
 K Means 
