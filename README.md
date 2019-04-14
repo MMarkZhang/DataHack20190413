@@ -35,4 +35,18 @@ _100 stations_
 ![100 kiosks](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/WechatIMG178.jpeg)
 _Closer Look_
 ![closer look](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/WechatIMG179.jpeg)
+Some kiosks are only 10 meters from each other, which indicates these locations need more bikes and a potential higher frequency of CheckOut/Return.
 
+### Idea II
+Will BCycle in Beijing benefit people? 
+#### Austin BCycle data tells us 
+_Two Distribution Graph_
+![](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/Trip%20Duration%20Minutes%20distribution(after%20clean%20outliers).png)
+![](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/WechatIMG176.png)
+We were thinking if there is a correlation between Distance vs. Duration? 
+We tried to predict duration by distance, but find big discrepancy. 
+Then we attempted to visualize this: 
+_The number of times bikes were used (vs. weekday and hour in a day)_ 
+![](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/weekday-time-usage.png)
+#### Algorithm 
+We build a model to predict the **duration** of a bike ride (by **distance, weekday, check out time**), by using xgboost. 
