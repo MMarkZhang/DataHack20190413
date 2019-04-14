@@ -10,4 +10,4 @@ How would it leverage the efficieny?
 Would it improve the air condition? 
 What kind of memeberships will people purchase? 
 ### Background Information from Data
-![Beijing 5 samples]https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/Sheet%201.png
+![Beijing 5 samples](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/Sheet%201.png)
