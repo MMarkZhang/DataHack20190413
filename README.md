@@ -26,6 +26,13 @@ _Five random samples from the Geolife dataset_
  
 ### Idea I 
 Beijing might has similar population who need BCycle as Austin BCyclers have.   
+Why not introduce BCycle into Beijing.
+
 #### Algorithm 
 
-By using **K Means** on the data of Beijing Geolife
+By using **K Means** on the data of Beijing Geolife, we cluster the footprints into 100 groups. And each group has a center which represents the potential kiosk station.  
+_100 stations_
+![100 kiosks](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/WechatIMG178.jpeg)
+_Closer Look_
+![closer look](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/WechatIMG179.jpeg)
+
