@@ -12,7 +12,9 @@ What kind of memeberships will people purchase?
 ### Background Information from Data
 #### Beijing Geolife dataset 
 Beijing Geolife.csv includes the trajectories of participants. Their locations in measure of Longitude and Latitude would be recorded every 3~5 seconds. 
+   
 ![Data File Description](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-14%20%E4%B8%8B%E5%8D%882.06.03.png)
+    
 _Five random samples from the Geolife dataset_   
 ![Beijing 5 samples](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/Sheet%201.png)
 **Participants from Beijing were travelling along the roads and might cluster in certain area.**   
@@ -31,6 +33,7 @@ Why not introduce BCycle into Beijing.
 #### Algorithm 
 
 By using **K Means** on the data of Beijing Geolife, we cluster the footprints into 100 groups. And each group has a center which represents the potential kiosk station.      
+   
 _100 stations_     
 ![100 kiosks](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/WechatIMG178.jpeg) 
    
@@ -48,6 +51,7 @@ _Two Distribution Graph_
 We were thinking if there is a correlation between Distance vs. Duration?   
 We tried to predict duration by distance, but find big discrepancy.   
 Then we attempted to visualize this:   
+   
 _The number of times bikes were used (vs. weekday & hour in a day)_    
 ![](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/weekday-time-usage.png)
 People tended to borrow a bike on weekend and at 11:00 - 20:00.   
@@ -61,7 +65,7 @@ So we visualized it again with the median:
 _Duration (vs. Weekday & Check Out time) \[median\]_     
 ![](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/Duration-CheckOutHour-Weekday-median.png)   
 #### Algorithm 
-We build a model (M2.1) to predict the **duration** of a bike ride (by **distance, weekday, check out time**), by using xgboost.
+We build a model (M2.1) to predict the **duration** of a bike ride (by **distance, weekday, check out time**), by using **xgboost.**
 
 ### Implementation of the Model in potential Beijing BCycle kiosks   
 _User000 in Beijing_
@@ -72,7 +76,8 @@ Comparing to the original time duration, which is 49.24 minutes, the BCycle high
 
 ### Future Ideas 
 - The current Geolife data is confusing because of the unclear specification of the transportation type. We can in the future to calculate if the BCycle is time-saving for bus-commuter or private car driver, since the public transportation in Beijing takes extra time to wait and busy car traffic always causes traffic jam.     
-- By visulizing the membership and counts and duration, we are thinking if we can predict the membership type that Beijing people might want to purchase.     
+- By visulizing the membership and counts and duration, we are thinking if we can predict the membership type that Beijing people might want to purchase.   
+   
 ![](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/Membership.png)    
 ![](https://raw.githubusercontent.com/MMarkZhang/DataHack20190413/master/Visualization/Membership-Duration.png)
 
