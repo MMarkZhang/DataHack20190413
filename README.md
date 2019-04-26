@@ -6,9 +6,9 @@
  - Fei He 
 ### Objectives 
 Introducing BCycle into Beijing in 2008.   
-How would it leverage the efficieny?  
+How would it leverage the efficiency?  
 Would it improve the air condition?   
-What kind of memeberships will people purchase?  
+What kind of memberships will people purchase?  
 ### Background Information from Data
 #### Beijing Geolife dataset 
 Beijing Geolife.csv includes the trajectories of participants. Their locations in measure of Longitude and Latitude would be recorded every 3~5 seconds. 
